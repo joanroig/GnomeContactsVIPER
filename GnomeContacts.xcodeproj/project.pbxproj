@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47A85CDC0EEEC7FEBE4C78C9 /* Pods_GnomeContacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94497B44AFB19C811B0313F /* Pods_GnomeContacts.framework */; };
+		D8243031204CC80F0043DD9F /* GnomeListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8243030204CC80F0043DD9F /* GnomeListTableViewCell.xib */; };
+		D828D60D204A2394005C5592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828D60C204A2394005C5592 /* AppDelegate.swift */; };
+		D828D612204A2394005C5592 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D828D610204A2394005C5592 /* Main.storyboard */; };
+		D828D614204A2394005C5592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D828D613204A2394005C5592 /* Assets.xcassets */; };
+		D828D617204A2394005C5592 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D828D615204A2394005C5592 /* LaunchScreen.storyboard */; };
+		D828D62D204A2394005C5592 /* GnomeContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828D62C204A2394005C5592 /* GnomeContactsUITests.swift */; };
+		D855B2CC204F5D4B00A15EB8 /* TestData.json in Resources */ = {isa = PBXBuildFile; fileRef = D855B2CB204F5D4B00A15EB8 /* TestData.json */; };
+		D855B2CD204F5E8C00A15EB8 /* TestData.json in Resources */ = {isa = PBXBuildFile; fileRef = D855B2CB204F5D4B00A15EB8 /* TestData.json */; };
+		D855B2D1204F629700A15EB8 /* FakeGnomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D855B2D0204F629700A15EB8 /* FakeGnomeListView.swift */; };
+		D855B2D3204F673F00A15EB8 /* FakeGnomeListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D855B2D2204F673F00A15EB8 /* FakeGnomeListRouter.swift */; };
+		D86F3CA4204B9BC700F5D9AC /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86F3CA3204B9BC700F5D9AC /* City.swift */; };
+		D86F3CA6204B9C0300F5D9AC /* ContactDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86F3CA5204B9C0300F5D9AC /* ContactDirectory.swift */; };
+		D89C98DC204B5B39002E3976 /* GnomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89C98DB204B5B39002E3976 /* GnomeListView.swift */; };
+		D8B6C9EA204CC0C6003A3CA5 /* GnomeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6C9E9204CC0C6003A3CA5 /* GnomeListTableViewCell.swift */; };
+		D8C9E3FB204DC13B00AE14DA /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E3FA204DC13B00AE14DA /* Theme.swift */; };
+		D8C9E3FD204DEA3E00AE14DA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E3FC204DEA3E00AE14DA /* Utils.swift */; };
+		D8C9E406204DEF8000AE14DA /* GnomeDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E405204DEF8000AE14DA /* GnomeDetailProtocols.swift */; };
+		D8C9E408204DEF8E00AE14DA /* GnomeDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E407204DEF8E00AE14DA /* GnomeDetailRouter.swift */; };
+		D8C9E40C204DEFB900AE14DA /* GnomeDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E40B204DEFB900AE14DA /* GnomeDetailPresenter.swift */; };
+		D8C9E40E204DEFC300AE14DA /* GnomeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9E40D204DEFC300AE14DA /* GnomeDetailView.swift */; };
+		D8F34F5B204C9EF2005176AF /* GnomeListEntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F34F5A204C9EF2005176AF /* GnomeListEntityManager.swift */; };
+		D8F37B3F204A2D7200D9AFEC /* GnomeListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F37B3E204A2D7200D9AFEC /* GnomeListInteractor.swift */; };
+		D8F37B42204A326F00D9AFEC /* GnomeListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F37B41204A326F00D9AFEC /* GnomeListProtocols.swift */; };
+		D8F37B45204A363900D9AFEC /* GnomeListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F37B44204A363900D9AFEC /* GnomeListRouter.swift */; };
+		D8F37B49204B2E1300D9AFEC /* Gnome.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F37B48204B2E1300D9AFEC /* Gnome.swift */; };
+		D8F37B4C204B3A3C00D9AFEC /* GnomeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F37B4B204B3A3C00D9AFEC /* GnomeListPresenter.swift */; };
+		D8FDED29204F3EAF00BAE507 /* CommonProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FDED28204F3EAF00BAE507 /* CommonProtocols.swift */; };
+		D8FDED2B204F565A00BAE507 /* GnomeListInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FDED2A204F565A00BAE507 /* GnomeListInteractorTest.swift */; };
+		D8FDED2D204F5A4E00BAE507 /* FakeGnomeListEntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FDED2C204F5A4E00BAE507 /* FakeGnomeListEntityManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D828D61E204A2394005C5592 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D828D601204A2394005C5592 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D828D608204A2394005C5592;
+			remoteInfo = GnomeContacts;
+		};
+		D828D629204A2394005C5592 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D828D601204A2394005C5592 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D828D608204A2394005C5592;
+			remoteInfo = GnomeContacts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB9BFBBC2753D8DC7E8AE046 /* Pods-GnomeContacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GnomeContacts.release.xcconfig"; path = "Pods/Target Support Files/Pods-GnomeContacts/Pods-GnomeContacts.release.xcconfig"; sourceTree = "<group>"; };
+		D8243030204CC80F0043DD9F /* GnomeListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GnomeListTableViewCell.xib; sourceTree = "<group>"; };
+		D828D609204A2394005C5592 /* GnomeContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GnomeContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D828D60C204A2394005C5592 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D828D611204A2394005C5592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D828D613204A2394005C5592 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D828D616204A2394005C5592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D828D618204A2394005C5592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D828D61D204A2394005C5592 /* GnomeContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GnomeContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D828D623204A2394005C5592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D828D628204A2394005C5592 /* GnomeContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GnomeContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D828D62C204A2394005C5592 /* GnomeContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeContactsUITests.swift; sourceTree = "<group>"; };
+		D828D62E204A2394005C5592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D855B2CB204F5D4B00A15EB8 /* TestData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestData.json; sourceTree = "<group>"; };
+		D855B2D0204F629700A15EB8 /* FakeGnomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeGnomeListView.swift; sourceTree = "<group>"; };
+		D855B2D2204F673F00A15EB8 /* FakeGnomeListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeGnomeListRouter.swift; sourceTree = "<group>"; };
+		D86F3CA3204B9BC700F5D9AC /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		D86F3CA5204B9C0300F5D9AC /* ContactDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDirectory.swift; sourceTree = "<group>"; };
+		D89C98DB204B5B39002E3976 /* GnomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeListView.swift; sourceTree = "<group>"; };
+		D8B6C9E9204CC0C6003A3CA5 /* GnomeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeListTableViewCell.swift; sourceTree = "<group>"; };
+		D8C9E3FA204DC13B00AE14DA /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D8C9E3FC204DEA3E00AE14DA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D8C9E405204DEF8000AE14DA /* GnomeDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeDetailProtocols.swift; sourceTree = "<group>"; };
+		D8C9E407204DEF8E00AE14DA /* GnomeDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeDetailRouter.swift; sourceTree = "<group>"; };
+		D8C9E40B204DEFB900AE14DA /* GnomeDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeDetailPresenter.swift; sourceTree = "<group>"; };
+		D8C9E40D204DEFC300AE14DA /* GnomeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeDetailView.swift; sourceTree = "<group>"; };
+		D8F34F5A204C9EF2005176AF /* GnomeListEntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeListEntityManager.swift; sourceTree = "<group>"; };
+		D8F37B3E204A2D7200D9AFEC /* GnomeListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeListInteractor.swift; sourceTree = "<group>"; };
+		D8F37B41204A326F00D9AFEC /* GnomeListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeListProtocols.swift; sourceTree = "<group>"; };
+		D8F37B44204A363900D9AFEC /* GnomeListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeListRouter.swift; sourceTree = "<group>"; };
+		D8F37B48204B2E1300D9AFEC /* Gnome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gnome.swift; sourceTree = "<group>"; };
+		D8F37B4B204B3A3C00D9AFEC /* GnomeListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeListPresenter.swift; sourceTree = "<group>"; };
+		D8FDED28204F3EAF00BAE507 /* CommonProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonProtocols.swift; sourceTree = "<group>"; };
+		D8FDED2A204F565A00BAE507 /* GnomeListInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeListInteractorTest.swift; sourceTree = "<group>"; };
+		D8FDED2C204F5A4E00BAE507 /* FakeGnomeListEntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeGnomeListEntityManager.swift; sourceTree = "<group>"; };
+		DBBF438BE701A69F014749BF /* Pods-GnomeContacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GnomeContacts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GnomeContacts/Pods-GnomeContacts.debug.xcconfig"; sourceTree = "<group>"; };
+		F94497B44AFB19C811B0313F /* Pods_GnomeContacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GnomeContacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D828D606204A2394005C5592 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47A85CDC0EEEC7FEBE4C78C9 /* Pods_GnomeContacts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D828D61A204A2394005C5592 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D828D625204A2394005C5592 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F52FDB900400C1E94DC8F40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F94497B44AFB19C811B0313F /* Pods_GnomeContacts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6AB69F2BE29FB9F23908FA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBBF438BE701A69F014749BF /* Pods-GnomeContacts.debug.xcconfig */,
+				CB9BFBBC2753D8DC7E8AE046 /* Pods-GnomeContacts.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D828D600204A2394005C5592 = {
+			isa = PBXGroup;
+			children = (
+				D828D60B204A2394005C5592 /* GnomeContacts */,
+				D828D620204A2394005C5592 /* GnomeContactsTests */,
+				D828D62B204A2394005C5592 /* GnomeContactsUITests */,
+				D828D60A204A2394005C5592 /* Products */,
+				C6AB69F2BE29FB9F23908FA5 /* Pods */,
+				5F52FDB900400C1E94DC8F40 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D828D60A204A2394005C5592 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D828D609204A2394005C5592 /* GnomeContacts.app */,
+				D828D61D204A2394005C5592 /* GnomeContactsTests.xctest */,
+				D828D628204A2394005C5592 /* GnomeContactsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D828D60B204A2394005C5592 /* GnomeContacts */ = {
+			isa = PBXGroup;
+			children = (
+				D828D60C204A2394005C5592 /* AppDelegate.swift */,
+				D828D610204A2394005C5592 /* Main.storyboard */,
+				D828D615204A2394005C5592 /* LaunchScreen.storyboard */,
+				D828D613204A2394005C5592 /* Assets.xcassets */,
+				D8F37B46204B2DDD00D9AFEC /* Common */,
+				D8F37B3C204A2CA500D9AFEC /* GnomeDetail */,
+				D8F37B3B204A2C9500D9AFEC /* GnomeList */,
+				D828D618204A2394005C5592 /* Info.plist */,
+			);
+			path = GnomeContacts;
+			sourceTree = "<group>";
+		};
+		D828D620204A2394005C5592 /* GnomeContactsTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8FDED2A204F565A00BAE507 /* GnomeListInteractorTest.swift */,
+				D855B2D0204F629700A15EB8 /* FakeGnomeListView.swift */,
+				D8FDED2C204F5A4E00BAE507 /* FakeGnomeListEntityManager.swift */,
+				D855B2D2204F673F00A15EB8 /* FakeGnomeListRouter.swift */,
+				D855B2CB204F5D4B00A15EB8 /* TestData.json */,
+				D828D623204A2394005C5592 /* Info.plist */,
+			);
+			path = GnomeContactsTests;
+			sourceTree = "<group>";
+		};
+		D828D62B204A2394005C5592 /* GnomeContactsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D828D62C204A2394005C5592 /* GnomeContactsUITests.swift */,
+				D828D62E204A2394005C5592 /* Info.plist */,
+			);
+			path = GnomeContactsUITests;
+			sourceTree = "<group>";
+		};
+		D89C98DA204B5B1F002E3976 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D89C98DB204B5B39002E3976 /* GnomeListView.swift */,
+				D8B6C9E9204CC0C6003A3CA5 /* GnomeListTableViewCell.swift */,
+				D8C9E3FE204DECDF00AE14DA /* Interfaces */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8C9E3FE204DECDF00AE14DA /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				D8243030204CC80F0043DD9F /* GnomeListTableViewCell.xib */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		D8C9E3FF204DEF2500AE14DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8C9E40D204DEFC300AE14DA /* GnomeDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8C9E400204DEF2D00AE14DA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D8C9E40B204DEFB900AE14DA /* GnomeDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D8C9E403204DEF3F00AE14DA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D8C9E407204DEF8E00AE14DA /* GnomeDetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D8C9E404204DEF4400AE14DA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D8C9E405204DEF8000AE14DA /* GnomeDetailProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D8F34F59204C9EDC005176AF /* EntityManager */ = {
+			isa = PBXGroup;
+			children = (
+				D8F34F5A204C9EF2005176AF /* GnomeListEntityManager.swift */,
+			);
+			path = EntityManager;
+			sourceTree = "<group>";
+		};
+		D8F37B3B204A2C9500D9AFEC /* GnomeList */ = {
+			isa = PBXGroup;
+			children = (
+				D89C98DA204B5B1F002E3976 /* View */,
+				D8F37B4A204B3A2D00D9AFEC /* Presenter */,
+				D8F37B3D204A2D5C00D9AFEC /* Interactor */,
+				D8F34F59204C9EDC005176AF /* EntityManager */,
+				D8F37B43204A361000D9AFEC /* Router */,
+				D8F37B40204A321800D9AFEC /* Protocols */,
+			);
+			path = GnomeList;
+			sourceTree = "<group>";
+		};
+		D8F37B3C204A2CA500D9AFEC /* GnomeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D8C9E3FF204DEF2500AE14DA /* View */,
+				D8C9E400204DEF2D00AE14DA /* Presenter */,
+				D8C9E403204DEF3F00AE14DA /* Router */,
+				D8C9E404204DEF4400AE14DA /* Protocols */,
+			);
+			path = GnomeDetail;
+			sourceTree = "<group>";
+		};
+		D8F37B3D204A2D5C00D9AFEC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D8F37B3E204A2D7200D9AFEC /* GnomeListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D8F37B40204A321800D9AFEC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D8F37B41204A326F00D9AFEC /* GnomeListProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D8F37B43204A361000D9AFEC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				D8F37B44204A363900D9AFEC /* GnomeListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D8F37B46204B2DDD00D9AFEC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D8F37B47204B2DE600D9AFEC /* Entities */,
+				D8FDED28204F3EAF00BAE507 /* CommonProtocols.swift */,
+				D8C9E3FA204DC13B00AE14DA /* Theme.swift */,
+				D8C9E3FC204DEA3E00AE14DA /* Utils.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D8F37B47204B2DE600D9AFEC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				D86F3CA5204B9C0300F5D9AC /* ContactDirectory.swift */,
+				D86F3CA3204B9BC700F5D9AC /* City.swift */,
+				D8F37B48204B2E1300D9AFEC /* Gnome.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		D8F37B4A204B3A2D00D9AFEC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				D8F37B4B204B3A3C00D9AFEC /* GnomeListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D828D608204A2394005C5592 /* GnomeContacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D828D631204A2394005C5592 /* Build configuration list for PBXNativeTarget "GnomeContacts" */;
+			buildPhases = (
+				A6CBFAE91E7075C5FD0943B5 /* [CP] Check Pods Manifest.lock */,
+				D828D605204A2394005C5592 /* Sources */,
+				D828D606204A2394005C5592 /* Frameworks */,
+				D828D607204A2394005C5592 /* Resources */,
+				2AFECB39CB1C6EE52F204017 /* [CP] Embed Pods Frameworks */,
+				04EB70026E8FDCA9EE3225A4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GnomeContacts;
+			productName = GnomeContacts;
+			productReference = D828D609204A2394005C5592 /* GnomeContacts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D828D61C204A2394005C5592 /* GnomeContactsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D828D634204A2394005C5592 /* Build configuration list for PBXNativeTarget "GnomeContactsTests" */;
+			buildPhases = (
+				D828D619204A2394005C5592 /* Sources */,
+				D828D61A204A2394005C5592 /* Frameworks */,
+				D828D61B204A2394005C5592 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D828D61F204A2394005C5592 /* PBXTargetDependency */,
+			);
+			name = GnomeContactsTests;
+			productName = GnomeContactsTests;
+			productReference = D828D61D204A2394005C5592 /* GnomeContactsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D828D627204A2394005C5592 /* GnomeContactsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D828D637204A2394005C5592 /* Build configuration list for PBXNativeTarget "GnomeContactsUITests" */;
+			buildPhases = (
+				D828D624204A2394005C5592 /* Sources */,
+				D828D625204A2394005C5592 /* Frameworks */,
+				D828D626204A2394005C5592 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D828D62A204A2394005C5592 /* PBXTargetDependency */,
+			);
+			name = GnomeContactsUITests;
+			productName = GnomeContactsUITests;
+			productReference = D828D628204A2394005C5592 /* GnomeContactsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D828D601204A2394005C5592 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Joan Roig";
+				TargetAttributes = {
+					D828D608204A2394005C5592 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D828D61C204A2394005C5592 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D828D608204A2394005C5592;
+					};
+					D828D627204A2394005C5592 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D828D608204A2394005C5592;
+					};
+				};
+			};
+			buildConfigurationList = D828D604204A2394005C5592 /* Build configuration list for PBXProject "GnomeContacts" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D828D600204A2394005C5592;
+			productRefGroup = D828D60A204A2394005C5592 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D828D608204A2394005C5592 /* GnomeContacts */,
+				D828D61C204A2394005C5592 /* GnomeContactsTests */,
+				D828D627204A2394005C5592 /* GnomeContactsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D828D607204A2394005C5592 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D855B2CD204F5E8C00A15EB8 /* TestData.json in Resources */,
+				D8243031204CC80F0043DD9F /* GnomeListTableViewCell.xib in Resources */,
+				D828D617204A2394005C5592 /* LaunchScreen.storyboard in Resources */,
+				D828D614204A2394005C5592 /* Assets.xcassets in Resources */,
+				D828D612204A2394005C5592 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D828D61B204A2394005C5592 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D855B2CC204F5D4B00A15EB8 /* TestData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D828D626204A2394005C5592 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04EB70026E8FDCA9EE3225A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GnomeContacts/Pods-GnomeContacts-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AFECB39CB1C6EE52F204017 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GnomeContacts/Pods-GnomeContacts-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GnomeContacts/Pods-GnomeContacts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6CBFAE91E7075C5FD0943B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GnomeContacts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D828D605204A2394005C5592 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C9E408204DEF8E00AE14DA /* GnomeDetailRouter.swift in Sources */,
+				D8C9E40C204DEFB900AE14DA /* GnomeDetailPresenter.swift in Sources */,
+				D8C9E40E204DEFC300AE14DA /* GnomeDetailView.swift in Sources */,
+				D8B6C9EA204CC0C6003A3CA5 /* GnomeListTableViewCell.swift in Sources */,
+				D8C9E406204DEF8000AE14DA /* GnomeDetailProtocols.swift in Sources */,
+				D86F3CA6204B9C0300F5D9AC /* ContactDirectory.swift in Sources */,
+				D8F37B45204A363900D9AFEC /* GnomeListRouter.swift in Sources */,
+				D86F3CA4204B9BC700F5D9AC /* City.swift in Sources */,
+				D8F37B49204B2E1300D9AFEC /* Gnome.swift in Sources */,
+				D8F34F5B204C9EF2005176AF /* GnomeListEntityManager.swift in Sources */,
+				D8FDED29204F3EAF00BAE507 /* CommonProtocols.swift in Sources */,
+				D89C98DC204B5B39002E3976 /* GnomeListView.swift in Sources */,
+				D8F37B3F204A2D7200D9AFEC /* GnomeListInteractor.swift in Sources */,
+				D8F37B4C204B3A3C00D9AFEC /* GnomeListPresenter.swift in Sources */,
+				D8C9E3FB204DC13B00AE14DA /* Theme.swift in Sources */,
+				D8C9E3FD204DEA3E00AE14DA /* Utils.swift in Sources */,
+				D8F37B42204A326F00D9AFEC /* GnomeListProtocols.swift in Sources */,
+				D828D60D204A2394005C5592 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D828D619204A2394005C5592 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8FDED2D204F5A4E00BAE507 /* FakeGnomeListEntityManager.swift in Sources */,
+				D8FDED2B204F565A00BAE507 /* GnomeListInteractorTest.swift in Sources */,
+				D855B2D3204F673F00A15EB8 /* FakeGnomeListRouter.swift in Sources */,
+				D855B2D1204F629700A15EB8 /* FakeGnomeListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D828D624204A2394005C5592 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D828D62D204A2394005C5592 /* GnomeContactsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D828D61F204A2394005C5592 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D828D608204A2394005C5592 /* GnomeContacts */;
+			targetProxy = D828D61E204A2394005C5592 /* PBXContainerItemProxy */;
+		};
+		D828D62A204A2394005C5592 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D828D608204A2394005C5592 /* GnomeContacts */;
+			targetProxy = D828D629204A2394005C5592 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D828D610204A2394005C5592 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D828D611204A2394005C5592 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D828D615204A2394005C5592 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D828D616204A2394005C5592 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D828D62F204A2394005C5592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D828D630204A2394005C5592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D828D632204A2394005C5592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBBF438BE701A69F014749BF /* Pods-GnomeContacts.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GnomeContacts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joanroig.GnomeContacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D828D633204A2394005C5592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB9BFBBC2753D8DC7E8AE046 /* Pods-GnomeContacts.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GnomeContacts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joanroig.GnomeContacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D828D635204A2394005C5592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GnomeContactsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joanroig.GnomeContactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GnomeContacts.app/GnomeContacts";
+			};
+			name = Debug;
+		};
+		D828D636204A2394005C5592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GnomeContactsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joanroig.GnomeContactsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GnomeContacts.app/GnomeContacts";
+			};
+			name = Release;
+		};
+		D828D638204A2394005C5592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GnomeContactsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joanroig.GnomeContactsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GnomeContacts;
+			};
+			name = Debug;
+		};
+		D828D639204A2394005C5592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GnomeContactsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joanroig.GnomeContactsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GnomeContacts;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D828D604204A2394005C5592 /* Build configuration list for PBXProject "GnomeContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D828D62F204A2394005C5592 /* Debug */,
+				D828D630204A2394005C5592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D828D631204A2394005C5592 /* Build configuration list for PBXNativeTarget "GnomeContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D828D632204A2394005C5592 /* Debug */,
+				D828D633204A2394005C5592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D828D634204A2394005C5592 /* Build configuration list for PBXNativeTarget "GnomeContactsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D828D635204A2394005C5592 /* Debug */,
+				D828D636204A2394005C5592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D828D637204A2394005C5592 /* Build configuration list for PBXNativeTarget "GnomeContactsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D828D638204A2394005C5592 /* Debug */,
+				D828D639204A2394005C5592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D828D601204A2394005C5592 /* Project object */;
+}

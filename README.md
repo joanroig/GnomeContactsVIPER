@@ -5,7 +5,7 @@ Swift app implemented using VIPER architecture and Auto Layout. Go to [Statement
 <br>
 <p align="center">
 <img src="https://raw.githubusercontent.com/joanroig/GnomeContactsVIPER/master/Assets/list.png " width="250">
-<img src="https://raw.githubusercontent.com/joanroig/GnomeContactsVIPER/master/Assets/listcategory.png" width="250">
+<img src="https://raw.githubusercontent.com/joanroig/GnomeContactsVIPER/master/Assets/listfilter.png" width="250">
 <img src="https://raw.githubusercontent.com/joanroig/GnomeContactsVIPER/master/Assets/detail.png" width="250">
 </p>
 <br>
